@@ -38,7 +38,7 @@ float distance(float a1,float b1,float a2,float b2)
 {
 float d;
 d = sqrt((a2-a1)*(a2-a1)+(b2-b1)*(b2-b1));
-printf("the distance between %f,%f ,%f& %f is %f",a1,b1,a2,b2,d);
+printf(" dist b/w %f,%f ,%f& %f is %f",a1,b1,a2,b2,d);
 }
 void main()
 {
