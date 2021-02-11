@@ -23,10 +23,10 @@ float d;
 d = sqrt((p2.a-p1.a)*(p2.a-p1.a)+(p2.b-p1.b)*(p2.b-p1.b));
 return d;
 }
-float Print(PO p1,PO p2,float d)
+void Print(PO p1,PO p2,float d)
 {
 printf("Dis b/w %f ,%f, %f&%f is %f",p1.a,p1.b,p2.a,p2.b,d);
-return 0;
+
 }
 float main()
 {
