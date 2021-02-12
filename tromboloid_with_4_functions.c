@@ -1,55 +1,38 @@
 //WAP to find the volume of a tromboloid using 4 functions.
 
 #include<stdio.h>
-float inputh();
-float inputb();
-float inputd();
-float cal(float h,float b,float d);
-
-float inputh()
+float input()
 {
-float h;
-printf("Enter h for the tromboloid");
-scanf("%f",&h);
-return h ;
+   int x;
+   printf("Enter h , d , b \n");
+   scanf("%d",&x);
+   return x;
 }
-float inputb()
+ 
+float find_volume(int h, int d,int b)
 {
-float b;
-printf("Enter b for the tromboloid");
-scanf("%f",&b);
-return b;
+   float volume;
+   volume=0.33*((h*d*b)+(d/b));
+   return volume;
 }
-float inputd()
+ 
+int output(float v)
 {
-float d;
-printf("Enter d for the tromboloid");
-scanf("%f",&d);
-return d;
-}
-
-float cal(float h,float b,float d)
-{
-float v;
-v=0.34*((h*b*d)+(d/b));
-
-return v;
-}
-float display(float v)
-{
-    printf("vol of tromboloid is%f",v);
-
-}
-int main()
-{
-float h,b,d,v;
-
-h=inputh();
-b=inputb();
-d=inputd();
-v=cal(h,b,d);
-display(v);
+   printf("Vol of tromboloid is %f\n",v);
 return 0;
-}  
+}
+
+void main()
+{
+   int h,d,b;
+    float volume ;
+    h=input();
+    d=input();
+    b=input();
+   volume=find_volume(h,d,b);
+    output(volume);
+ 
+   
+}
 
 
